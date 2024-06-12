@@ -1,6 +1,6 @@
 <script setup lang="ts">
-const {x,y} = useMouse()
-const colorMode  = useColorMode()
+const { x, y } = useMouse()
+const colorMode = useColorMode()
 </script>
 
 <template>
@@ -8,10 +8,18 @@ const colorMode  = useColorMode()
     hello world {{ x }} - {{ y }}
   </div>
   <select v-model="colorMode.preference">
-     <option value="system">System</option>
-    <option value="light">Light</option>
-    <option value="dark">Dark</option>
-    <option value="sepia">sepia</option>
+    <option value="system">
+      System
+    </option>
+    <option value="light">
+      Light
+    </option>
+    <option value="dark">
+      Dark
+    </option>
+    <option value="sepia">
+      sepia
+    </option>
   </select>
 </template>
 
