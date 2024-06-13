@@ -25,9 +25,7 @@ const colorMode = useColorMode()
         </option>
       </select>
     </div>
-    <div class="p4">
-      Playground
-    </div>
+    <the-playground h-full w-full />
   </div>
 </template>
 
