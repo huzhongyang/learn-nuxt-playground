@@ -15,7 +15,8 @@ async function startDevServer() {
     '../templates/basic/*.*',
     '!**/node_modules/**',
   ], {
-    as: 'raw',
+    query: '?raw',
+    import: 'default',
     eager: true,
   })
   const files = Object.fromEntries(Object.entries(rawFiles).map(([path, content]) => {
