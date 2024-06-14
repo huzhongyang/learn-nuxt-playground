@@ -11,18 +11,14 @@ import '@unocss/reset/tailwind.css'
 </template>
 
 <style>
-  body {
-  background-color: #ffffff;
-  color: rgba(0, 0, 0, 0.8);
+html,
+body {
+  height: 100vh;
+  overflow: hidden;
+  --uno: bg-base font-sans;
 }
 
-.dark body {
-  background-color: #091a28;
-  color: #ebf4f1;
-}
-
-.sepia body {
-  background-color: #f1e7d0;
-  color: #433422;
+.dark {
+  color-scheme: dark;
 }
 </style>
